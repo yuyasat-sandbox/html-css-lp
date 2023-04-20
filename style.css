@@ -1,0 +1,93 @@
+html {
+  font-size: 100%; /* 16pxのこと。 */
+}
+
+body {
+  color: #24292e;
+}
+
+a { 
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.3rem; /* 16px * 1.3 = 20.8px */
+}
+
+img {
+  max-width: 100%; /* スマホサイズになった場合も画像が縮小される */
+}
+
+li {
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+.site-title {
+  line-height: 1px;
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+
+.site-title a{
+  color: #24292e;
+}
+
+/* header */
+#header {
+  max-width: 960px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 4%;
+  height: 170px;
+}
+
+#header ul {
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+}
+
+#header ul li {
+  font-size: 0.9rem;
+  margin-left: 30px;
+}
+
+#header ul li a {
+  color: #24292e;
+  transition: all 0.3s;
+}
+
+#header ul li a:hover {
+  opacity: 0.5;
+}
+
+#header li .icon {
+  width: 30px;
+}
+
+/* sp */
+@media screen and (max-width: 600px) {
+  .site-title {
+    margin-top: 20px;
+  }
+  /* header */
+  #header {
+   flex-direction: column;
+   height: auto;
+   line-height: 40px;
+   margin-top: 20px;
+  }
+
+  #header li {
+    font-size: 0.8rem;
+    margin-left: 20px;
+  }
+
+  #header li .icon {
+    width: 20px;
+    margin-top: 15px;
+  }
+}
